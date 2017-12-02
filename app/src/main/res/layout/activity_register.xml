@@ -98,6 +98,7 @@
 
         <TextView
             android:id="@+id/lgn_now"
+            android:padding="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="12dp"

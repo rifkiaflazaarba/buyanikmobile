@@ -19,6 +19,7 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent nextHome =  new Intent(RegisterActivity.this ,LoginActivity.class);
+                startActivity(nextHome);
             }
         });
     }
