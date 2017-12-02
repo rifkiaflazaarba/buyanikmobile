@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#157e19">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_marginTop="90dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/daun"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BUYANIK"
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:textColor="#2d4e28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mobile"
+                style="@style/Base.TextAppearance.AppCompat.Headline"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:background="@drawable/button_new2"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="login"
+            android:textColor="#2d4e28"/>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:background="@drawable/button_new"
+            android:layout_gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF"
+            android:text="register" />
+
+    </LinearLayout>
+
+</ScrollView>

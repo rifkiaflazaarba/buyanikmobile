@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:layout.android="http://schemas.android.com/tools"
+    android:padding="8dp">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/username"
+        android:hint="Username"
+        app:counterEnabled="true"
+        app:counterMaxLength="6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/username_ed"
+            android:singleLine="true"
+            android:maxLength="6"
+            android:imeOptions="actionNext"
+            android:nextFocusDown="@+id/password_ed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/password"
+        android:hint="Password"
+        app:counterEnabled="true"
+        app:counterMaxLength="6"
+        android:layout_below="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/password_ed"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:maxLength="6"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/button_ed"
+        android:layout_below="@+id/chekbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:textColor="#FFFF"
+        android:theme="@style/ThemeLoginBtn"
+        />
+
+    <CheckBox
+        android:id="@+id/chekbox"
+        android:text="@string/hint_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"/>
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="REGISTER"
+            android:textStyle="bold"
+            style="@style/Base.TextAppearance.AppCompat.Headline"
+            />
+
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="12"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:singleLine="true"
+            android:drawableRight="@drawable/ic_person_black_24dp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:singleLine="true"
+            android:drawableRight="@drawable/ic_email_black_24dp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_gravity="center"
+        app:counterEnabled="true"
+        app:counterMaxLength="8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLength="8"
+            android:imeOptions="actionDone"
+            android:drawableRight="@drawable/ic_vpn_key_black_24dp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+
+            android:background="#157e19"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:text="register"
+            android:textColor="#FFFF"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:id="@+id/lgn_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="Already Registered? Login Now!"/>
+
+    </LinearLayout>
+
+</LinearLayout>
