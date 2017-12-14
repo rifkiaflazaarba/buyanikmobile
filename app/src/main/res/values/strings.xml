@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">buyanikmobile</string>
     <string name="hint_login">Holaaa Despacito</string>
+    <string name="pesan_izin">Read kontak sudah diizinkan</string>
 </resources>

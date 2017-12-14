@@ -10,7 +10,7 @@
         android:id="@+id/username"
         android:hint="Username"
         app:counterEnabled="true"
-        app:counterMaxLength="6"
+        app:counterMaxLength="20"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 

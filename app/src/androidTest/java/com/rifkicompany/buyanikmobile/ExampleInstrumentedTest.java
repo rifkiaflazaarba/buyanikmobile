@@ -1,4 +1,4 @@
-package com.rifkucompany.buyanikmobile;
+package com.rifkicompany.buyanikmobile;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

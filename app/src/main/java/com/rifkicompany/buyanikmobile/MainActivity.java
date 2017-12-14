@@ -1,4 +1,4 @@
-package com.rifkucompany.buyanikmobile;
+package com.rifkicompany.buyanikmobile;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

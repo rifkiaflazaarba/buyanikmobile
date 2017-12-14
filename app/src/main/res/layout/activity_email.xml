@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:orientation="horizontal"
+        android:background="#0d9612"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:background="#0d9612"
+            android:tint="#FFFF"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+        <TextView
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="16dp"
+            android:textSize="24dp"
+            android:textColor="#FFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_below="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:text="Dari"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"/>
+
+        <EditText
+            android:id="@+id/from"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_below="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:text="Kepada"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"/>
+
+        <EditText
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout4"
+        android:layout_below="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:text="Subjek"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"/>
+
+        <EditText
+            android:id="@+id/subject"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout5"
+        android:layout_below="@+id/layout4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:text="Tulis Pesan"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"/>
+
+        <EditText
+            android:id="@+id/writeText"
+            android:imeOptions="actionDone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/send"
+        android:src="@drawable/ic_send_black_24dp"
+        android:tint="#FFFF"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="480dp"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"/>
+
+
+
+</RelativeLayout>
